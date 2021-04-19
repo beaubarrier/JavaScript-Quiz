@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+    <div id="titleScreen">
+        <h1> Coding Quiz Challenge!</h1>
+        <p>- Answer a question correctly to score a point.
+            <br>- An incorrect answer will result in 5seconds deducted from the timer.
+            <br>- If the timer reaches 0, the game will end.
+            <br>- When you finish or run out of time, log your initials and score!
+        </p>
+        <!-- remever to put return link-->
+    </div>
+
+
+
+    <div id="gameTimerLocaton">
+        Game Timer:
+        <p id="countdownSpot">20</p>
+    </div>
+
+    <br>
+
+    <div id="playerScore">
+        Your score: <strong>
+            <p id="hsScoresDisplay">0</p>
+        </strong>
+    </div>
+
+    <br>
+
+    <button id="startGameBtn"> StartGame</button>
+
+
+
+    <div id="quizScreen">
+        <p id="p1">Questions will appear here. </p>
+
+        <button id="answerBtnA" type="submit" name="answerBtnA" value="enter">
+            Answer A
+        </button>
+        <button id="answerBtnB" type="submit" name="answerBtnB" value="enter">
+            Answer B
+        </button>
+        <button id="answerBtnC" type="submit" name="answerBtnC" value="enter">
+            Answer C
+        </button>
+        <br><br>
+    </div>
+
+
+
+
+    <div id="submitScore">
+        Please enter your initials.<input id="initialsInput" type="text" maxlength="3" minlength="1" />
+        <br><button id="saveScore">Submit Score </button>
+        <input type="button" onclick="location.href='./highScores.html';" value="See High Scores" />
+    </div>
+
+    <br><br>
+
+    <div class="resultsTown"></div>
+    <h4>Results will be displayed upon quiz completion.</h4>
+
+
+    
+
+    <div class="rightAnswersSec">
+
+        <p id="displayedQuestion">
+            Your Answers.
+        </p>
+
+        <hr width="auto">
+
+        <p id="userAnswers">
+
+        </p>
+    </div>
+
+    <div class="rightAnswersSec">
+
+        <p id="displayedQuestion">
+            Correct Answers.
+        </p>
+
+        <hr width="auto">
+
+        <p id="rightAnswers">
+
+        </p>
+
+    </div>
+
+
+    <br>
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
